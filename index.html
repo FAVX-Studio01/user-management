@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="card mb-4 mx-auto w-25 mt-4">
+
+        <div class="card-header">
+                <h6 style="text-align: center;" class="text-black">User Management</h6>
+        </div>
+
+        <div class="card-body">
+            <form action="" id="form">
+
+            <div class="mb-2">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-2">
+                <label for="occupation">Occupation</label><br>
+                <input type="text" class="form-control" id="occupation">
+            
+            </div>
+           
+            <div class="mb-2">
+                <label for="Address" class="form-label">Address</label>
+                <textarea class="form-control" id="address"></textarea>
+            </div>
+            
+            <div class="mb-2">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+           
+          
+            <div class="mb-2">
+                <label for="tel">Telephone</label>
+                <input type="text" class="form-control" id="telephone">
+            </div>
+            <div class="mb-3">
+                <!-- <input id="submitBtn" value="Add Task" class="btn btn-primary"> -->
+                <input id="btn" type="submit" value="Sign up" class="btn btn-success">
+            </div>
+        </form>
+
+    </div>      
+ </div>
+ <div class="col-md-8 mx-auto">
+                <div class="card" id="displayTask">
+                    <div class="card-header">
+                     Result
+                    </div>
+                    <div class="card-body">
+                      <table class="table table-bordered" id="table-data">
+                        <thead>
+                          <tr>
+                            <!-- <th scope="col">#</th> -->
+                            <th scope="col">Name</th>
+                            <th scope="col">Occupation</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Password</th>
+                            <th scope="col">Telephone</th>
+                            <th scope="col">Status</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody id="output">
+                            
+                           </tbody>
+                    </table>
+                    </div>
+                  </div>
+            </div>
+
+    <script src="user.js"></script>
+
+                    
+</body>
+</html>
